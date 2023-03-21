@@ -18,4 +18,13 @@ public interface I_CoffreChateau {
 	
 	public abstract String nomEtat();
 
+	public boolean peutOterLivreUML();
+
+	public boolean peutTournerChandelleVersDroite();
+
+	public boolean peutTournerChandelleVersGauche();
+
+	public boolean peutFermerCoffre();
+
+	public boolean peutRemettreLivreUML();
 }

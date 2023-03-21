@@ -15,4 +15,19 @@ public abstract class Visible extends Etat {
         c.libererLapintueur();
         c.setEtat(Bloque.getInstance());
     }
+
+    @Override
+    public boolean peutTournerChandelleVersDroite() {
+        return true;
+    }
+
+    @Override
+    public boolean peutTournerChandelleVersGauche() {
+        return true;
+    }
+
+    @Override
+    public boolean peutRemettreLivreUML() {
+        return true;
+    }
 }

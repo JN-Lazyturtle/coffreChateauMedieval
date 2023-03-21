@@ -1,9 +1,11 @@
 package fenetre;
 
+import coffre.Coffre;
+
 import java.awt.*;
 import javax.swing.*;
 
-public class FenetreChienGentil extends JFrame {
+public class FenetreChienGentil extends JFrame implements Observateur {
 
 	private JTextField txtChien;
 
@@ -28,5 +30,10 @@ public class FenetreChienGentil extends JFrame {
 			txtChien.setText("Le chien gentil est lib�r�");
 		else 
 			txtChien.setText("Le chien gentil est enferm�");
+	}
+
+	@Override
+	public void mettreAJour(Coffre coffre) {
+		afficherChien(coffre.chienEstLibere());
 	}
 }

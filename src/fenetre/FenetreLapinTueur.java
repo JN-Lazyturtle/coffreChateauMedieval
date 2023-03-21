@@ -1,9 +1,10 @@
 package fenetre;
 
+import coffre.Coffre;
 import java.awt.*;
 import javax.swing.*;
 
-public class FenetreLapinTueur extends JFrame {
+public class FenetreLapinTueur extends JFrame implements Observateur {
 
 	private JTextField txtLapin;
 
@@ -28,5 +29,10 @@ public class FenetreLapinTueur extends JFrame {
 			txtLapin.setText("Le lapin tueur est lib�r�");
 		else 
 			txtLapin.setText("Le lapin tueur est enferm�");
+	}
+
+	@Override
+	public void mettreAJour(Coffre coffre) {
+		afficherLapin(coffre.lapinEstLibere());
 	}
 }

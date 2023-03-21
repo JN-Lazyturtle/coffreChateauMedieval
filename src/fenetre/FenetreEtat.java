@@ -1,9 +1,10 @@
 package fenetre;
 
+import coffre.Coffre;
 import java.awt.*;
 import javax.swing.*;
 
-public class FenetreEtat extends JFrame {
+public class FenetreEtat extends JFrame implements Observateur {
 
 	private JTextField txtEtat;
 
@@ -25,5 +26,10 @@ public class FenetreEtat extends JFrame {
 	public void afficherEtat(String etat)
 	{
 		txtEtat.setText(etat);
+	}
+
+	@Override
+	public void mettreAJour(Coffre coffre) {
+		afficherEtat(coffre.nomEtat());
 	}
 }

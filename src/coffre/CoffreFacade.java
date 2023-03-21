@@ -47,4 +47,29 @@ public class CoffreFacade implements I_CoffreChateau {
     public String nomEtat() {
         return coffre.nomEtat();
     }
+
+    @Override
+    public boolean peutOterLivreUML() {
+        return false;
+    }
+
+    @Override
+    public boolean peutTournerChandelleVersDroite() {
+        return false;
+    }
+
+    @Override
+    public boolean peutTournerChandelleVersGauche() {
+        return false;
+    }
+
+    @Override
+    public boolean peutFermerCoffre() {
+        return false;
+    }
+
+    @Override
+    public boolean peutRemettreLivreUML() {
+        return false;
+    }
 }

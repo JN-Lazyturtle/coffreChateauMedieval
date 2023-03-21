@@ -20,4 +20,9 @@ public class Ouvert extends Etat{
     public void fermerCoffre(Coffre c) {
         c.setEtat(Ferme.getInstance());
     }
+
+    @Override
+    public boolean peutFermerCoffre() {
+        return true;
+    }
 }

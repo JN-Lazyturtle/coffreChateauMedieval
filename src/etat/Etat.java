@@ -14,4 +14,25 @@ public abstract class Etat {
 
     public void fermerCoffre(Coffre c) {}
 
+    public boolean peutOterLivreUML() {
+        return false;
+    }
+
+    public boolean peutTournerChandelleVersDroite() {
+        return false;
+    }
+
+    public boolean peutTournerChandelleVersGauche() {
+        return false;
+    }
+
+    public boolean peutFermerCoffre() {
+        return false;
+    }
+
+    public boolean peutRemettreLivreUML() {
+        return false;
+    }
+
+
 }

@@ -23,4 +23,8 @@ public class CacheParBibliotheque extends Etat {
 
     }
 
+    @Override
+    public boolean peutOterLivreUML() {
+        return true;
+    }
 }
